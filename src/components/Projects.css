@@ -1,0 +1,14 @@
+.projects {
+  background-color: rgb(211, 218, 218);
+  width: 100vw;
+  margin-top: 100px;
+  padding-top: 40px;
+}
+.collection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+}
