@@ -1,10 +1,10 @@
 import React from 'react'
 import './Home.css'
-import image from '../assets/image.svg'
+import image from '../assets/k9.svg'
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="h1">
         <div className="text">
             <h1>Uzair Hussain</h1>
             <p>An Organized individual xyz hllwo world of pakistanit was a pleaseure meeting people like you </p>

@@ -1,0 +1,35 @@
+.contact {
+  /* background-color: rgb(127, 218, 218); */
+  width: 100vw;
+  height: 300px;
+  padding-top: 40px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.ava {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.social {
+  display: flex;
+}
+.icon {
+  margin-left: 16px;
+}
+.icon:hover {
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(-10px);
+}

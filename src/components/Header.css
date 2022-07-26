@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Comforter+Brush&family=Fira+Sans:ital,wght@0,100;0,400;1,200&family=Mr+Dafoe&family=Outfit:wght@500&display=swap");
+
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.header__logo > h2 {
+  font-family: "Mr Dafoe", cursive;
+  font-size: 34px;
+  color: #0099ff;
+}
+
+.logo__image {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.header__logo {
+  margin-left: 40px;
+  display: flex;
+  color: rgb(107, 105, 105);
+  align-items: center;
+}
+
+.header__links {
+  align-content: space-between;
+  display: flex;
+  margin-right: 60px;
+}
+.link {
+  margin-left: 25px;
+  margin-right: 30px;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all ease 0.5s;
+  font-weight: 400;
+  color: rgb(107, 105, 105);
+}
+
+.link:hover {
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.header__btn {
+  background-color: #0099ff;
+  height: 40px;
+  width: 120px;
+  border: none;
+  font-size: 16px;
+  margin-right: 40px;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: black;
+}
+
+.header__btn:hover {
+  background-color: whitesmoke;
+  border: 3px solid #0099ff;
+  cursor: pointer;
+}
+
+.hvr-sweep-to-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0099ff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-left:hover,
+.hvr-sweep-to-left:focus,
+.hvr-sweep-to-left:active {
+  color: black;
+}
+.hvr-sweep-to-left:hover:before,
+.hvr-sweep-to-left:focus:before,
+.hvr-sweep-to-left:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    flex-direction: column;
+    width: 450px;
+    position: absolute;
+  }
+
+  .header__logo {
+    margin-left: -30px;
+    display: flex;
+    color: rgb(107, 105, 105);
+    align-items: center;
+  }
+  .header__links {
+    margin-right: 25px;
+  }
+}

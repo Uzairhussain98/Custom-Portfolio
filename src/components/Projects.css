@@ -3,6 +3,7 @@
   width: 100vw;
   margin-top: 100px;
   padding-top: 40px;
+  padding-bottom: 0px;
 }
 .collection {
   display: flex;
@@ -11,4 +12,10 @@
   justify-content: space-evenly;
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.cycle {
+  width: 100px;
+  height: 80px;
+  margin-bottom: -12px;
 }
