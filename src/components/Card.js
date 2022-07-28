@@ -7,9 +7,9 @@ import './Card.css'
 import orbit from '../assets/orbit.png'
 
 
-export default function MediaCard({ image , title , descripition }) {
+export default function MediaCard({ image , title , descripition ,link }) {
   return (
-    <Card sx={{ maxWidth: 345 }} className="card" onClick={() =>window.open('http://www.google.com')}>
+    <Card sx={{ maxWidth: 345 }} className="card" onClick={() =>window.open( link ? link :'http://www.google.com')}>
       <CardMedia
         component="img"
         height="140"
@@ -17,7 +17,7 @@ export default function MediaCard({ image , title , descripition }) {
         alt="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div">
           {title}
         </Typography>
         <Typography variant="body2" color="text.secondary" align="left" >

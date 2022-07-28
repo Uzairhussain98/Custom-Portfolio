@@ -1,6 +1,8 @@
 import React from 'react'
 import './Header.css'
-import logo from '../assets/ava.png'
+// import logo from '../assets/ava.png'
+import resume from '../assets/Resume.pdf'
+
 
 
 
@@ -21,7 +23,7 @@ const Header = () => {
 
        </div>
 
-       <button className="header__btn ">Get Resume</button>
+       <button className="header__btn "><a href={resume} download> Get Resume</a></button>
 
     </div>
   )

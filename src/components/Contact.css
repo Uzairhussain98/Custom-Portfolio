@@ -21,6 +21,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-weight: 400;
+  font-size: 18px;
 }
 .social {
   display: flex;
@@ -31,5 +33,10 @@
 .icon:hover {
   position: relative;
   transition: transform 0.5s ease-in-out;
-  transform: translateY(-10px);
+  transform: translateY(-14px);
+  /* transition-delay: 0.2s; */
+}
+.contact > h1 {
+  font-size: x-large;
+  color: black;
 }
