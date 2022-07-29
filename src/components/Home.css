@@ -54,3 +54,38 @@ img {
 .illus {
   margin-right: 40px;
 }
+
+@media only screen and (max-width: 450px) {
+  .home {
+    flex-direction: column;
+    margin-top: 130px;
+  }
+  img {
+    width: 320px;
+    margin-left: 20px;
+  }
+  .illus {
+    margin-right: 0px;
+  }
+  .text {
+    font-size: 9px;
+    /* width: 90%; */
+    /* width: 100%; */
+    width: 90vw;
+    margin-left: 20px;
+    padding: 0;
+    /* margin-right: 60px; */
+    margin-bottom: 60px;
+  }
+  .text > h1 {
+    font-size: 45px;
+  }
+  .text > p {
+    /* text-align: justify; */
+
+    text-justify: inter-word;
+  }
+  .btn {
+    margin-left: 15vw;
+  }
+}

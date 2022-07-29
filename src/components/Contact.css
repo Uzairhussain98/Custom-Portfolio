@@ -40,3 +40,18 @@
   font-size: x-large;
   color: black;
 }
+@media only screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* text-align: center; */
+  }
+  .details {
+    align-items: center;
+  }
+  .ava {
+    margin-left: 100px;
+  }
+}

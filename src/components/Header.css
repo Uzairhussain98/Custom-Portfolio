@@ -141,3 +141,21 @@ a {
     margin-right: 25px;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .header {
+    /* background-color: #0099ff; */
+    border-bottom: 1px solid #0099ff;
+    width: 100vw;
+  }
+  /* .header__logo > h2 {
+    color: whitesmoke;
+  } */
+
+  .header div:not(:first-child) {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+}
